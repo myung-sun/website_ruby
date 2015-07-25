@@ -1,0 +1,26 @@
+<h1>Learn#intro</h1>
+
+<h3>Early History</h3>
+
+	<ul>
+	<li>July, 2004: David Heinemeier Hansson extracts his work from “Basecamp,” and release it as an open source.</li> 
+	<li>February, 2005: Hansson commits right for the released open source of his work.</li>
+	<li>December, 2005: Hansson names his open source, Ruby on Rails, and releases version 1.0.</li>
+	<li>August, 2006: Becomes known to public.</li>
+	<li> December, 2008: Merged with a web application framework, Merb.</li>
+	</ul>
+
+<h3> What is Ruby on Rails? </h3>
+	<ul>
+	<li>"Rails is a web application development framework written in the Ruby language. It is designed to make programming web applications easier by making assumptions about what every developer needs to get started… (RailsGuide, 2015)”</li>
+	<li>In a shorter term, it is an web development framework that uses the model-view-controller(MVC) pattern for a easier application development. 
+	</li>
+	</ul>
+<h3> MVC model </h3>	
+	<%= image_tag 'MVCmodel.jpg', size: '720x480' %>
+        <p> Figure 1. MVC Model overview </p>
+	<p> As other conventional frameworks, Rails is also built on MVC model, which is illustrated at figure 1. Followings are a brief overview of MVC model.
+            Firstly, a user requests an action then Router redirects the action to a responsible Controller. Once a Controller gets the action. It assess if the action requires
+            database access. If it does, it queries a Model. In addtion, a Controller also handles processes the action requires. This is where a developer implements codes that 
+            process a user's action. Note that Rails uses RESTful API for a routing. When a Model gets the query, it establishes relationship between the query and a database table. 
+            After a relationship is established, now View presents a result of the action that a user requested to a user in HTML format. </p>    

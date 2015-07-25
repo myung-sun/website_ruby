@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Questions</h1>
+
+<% @boards.each do |board| %>
+  <h1><%= board.id %> : <%= link_to board.title, board %></h1>
+<% end %>
+
+<br>
+
+<%= link_to 'New Question', new_board_path, class: "btn btn-primary" %>

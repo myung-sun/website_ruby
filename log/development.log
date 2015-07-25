@@ -1,0 +1,38 @@
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-24 20:08:31 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (2.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (12.2ms)
+  [1m[35mUser Load (36.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Completed 200 OK in 13508ms (Views: 13470.0ms | ActiveRecord: 37.9ms)
+
+
+Started GET "/assets/home.self-906e0d0ca344201117f6e513f3a06ee10a9d0473d69a77c0cab7e00b7f49ae70.css?body=1" for 127.0.0.1 at 2015-07-24 20:08:46 -0700
+
+
+Started GET "/assets/learn.self-d769b57b60b27a69e85b92b881dd17ef0cc9b2556bd6fa9eab2d20853954be29.css?body=1" for 127.0.0.1 at 2015-07-24 20:08:46 -0700
+
+
+Started GET "/assets/users.self-8f087b2d691c9dba7623a511178c7e8b7bc6d505a0078c81a4aaf8413927ec49.css?body=1" for 127.0.0.1 at 2015-07-24 20:08:46 -0700
+
+
+Started GET "/learn/intro" for 127.0.0.1 at 2015-07-24 20:08:51 -0700
+Processing by LearnController#intro as HTML
+  Rendered learn/intro.html.erb within layouts/application (109.5ms)
+  [1m[36mUser Load (46.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 200 OK in 881ms (Views: 833.8ms | ActiveRecord: 46.6ms)
+
+
+Started GET "/learn/pros" for 127.0.0.1 at 2015-07-24 20:08:55 -0700
+Processing by LearnController#pros as HTML
+  Rendered learn/pros.html.erb within layouts/application (634.4ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Completed 200 OK in 882ms (Views: 879.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-24 20:08:58 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 200 OK in 244ms (Views: 243.5ms | ActiveRecord: 0.6ms)

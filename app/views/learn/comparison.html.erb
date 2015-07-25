@@ -1,0 +1,154 @@
+<h1> Summary of Ruby On Rails </h1>
+<ol>
+<li><%= link_to 'Introduction', learn_intro_path %></li>
+<li><%= link_to 'Pros', learn_pros_path %></li>
+<li><%= link_to 'Cons', learn_cons_path %></li>
+<li><%= link_to 'Conclusion', learn_conclusion_path %></li>
+</ol><br><br><br>
+
+<h1> Comparison of Rails framework with other framworks  </h1>
+<hr class="hr_comp"/>
+<div>
+<h2> Ruby On Rails VS Django </h2>
+<h3> Overview </h3>
+<p>At first glance, the prominent difference between Rails and Django is the main language they use.
+While Rails framework is built on Ruby, Django framework uses Python as their base language.
+Consequently, each framework inherits their base language’s advantages and disadvantages.
+Both of Rails and Python use MVC model but each framework differently handles the model.
+To demonstrate their difference, we separately demonstrate the model as Model, View, and Controller.  </p>
+<h3> Model </h3>
+<p>Firstly, we have a look at how each model handles Model. Since much of Model has to do is related to a database,
+their difference occurs at their behaviours of handling a database.
+The explicit differences are that Rails does not really support concept of “Foreign key.”
+One may argue that this may not cause significant issues but it may causes an issue related a referential integrity.
+In addition, when creating a table, Rails sets “null” for new attributes by default but Django requires a user to specifically initialise a value for new attributes.
+In addition, Rails allows a column addition on a table by easily updating a migrate file but Django only allows column addition by using a third-party library.</p>
+<h3> Controller </h3>
+Secondly, two frameworks show major differences in Controller.
+Since Rails has a built in template file that handle HTTP’s methods such as GET and POST, thus, a developer needs to implement actions according to template file.
+Similarly, Django can also implements actions analogy to Rails but it also allows a developer to implement customised actions.
+<h3> View </h3>
+Finally, each framework shows an another difference in View.
+Rails allows a user to write arbitrary Ruby codes inside the View HTML, while Django only allows a user to use python codes such as “if” and “for” loop.
+While Rails allowing arbitrary codes in HTML may benefits many developers, it may cause a practical issues.
+The reason is because HTML should now contain any logical implementations but allowing arbitrary codes in HTML may cause an inexperienced developers to include logical implementations in HTML.
+However, if it is used within understandings, it can provide strong advantages to a developer. We just need to aware that a great power comes with responsibility.</p>
+</div>
+
+<hr class="hr_comp"/>
+<div>
+<h2>Ruby On Rails VS Play Framework</h2>
+<h3>Overview</h3>
+    <p>Play is less mature than Rails. Compared to Rails, it has strengths and weaknesses. </p>
+    <h3>Deployment</h3>
+        <ul class="Deployment">
+        <li>Play should win here: jars are great, and the docs give lots of deployment options. However, Play uses Rhino to compile RequireJS files, so the compilation step is mercilessly slow. (This would be different on a website that doesn't use much client-side code.)
+        <li>Rails is a huge hassle when setting up a server environment; Play is more hassle during each deploy (only because deployment is so slow). As a result, Play deployment turns into an actual thing. </li>
+    	<li>Winner: Rails</li></ul>
+    <h3>Asynchronicity</h3>
+        <ul class="Asynchronicity">
+        <li>Play makes asynchronous code understandable. Rails either tries to hide it and sometimes doesn't support it. Play's clarity and simplicity, as asynchronous code is important at a certain stage of development. It's simpler and more efficient than threading or forking.</li>
+        <li>Winner: Play</li></ul>
+    <h3>SQL Migrations/Evolutions</h3>
+        <ul class="SQL Migrations/Evolutions">
+        <li>Rails migrations seem sensible: mostly code, plus SQL when you need it. You decide when to apply migrations: you can run them from the command-line with Rake. Play evolutions are straight SQL, which makes for lots of boilerplate code.</li>
+        <li>Even worse: with Play, you can't deploy your evolutions with a single command. This leads to contortions on production servers during deployment.</li>
+        <li>Winner: Rails</li></ul>
+    <h3>Routing</h3>
+        <ul class="Routing">
+        <li>A typical Play project's routes file is more verbose than a typical Rails project's, because Rails has a standardized notion of a "resource". Rails also provides a convention for action names.</li>
+    	<li>On the other hand, in Play, required query parameters are handled perfectly; in Rails, controller code needs to check their types (and if it doesn't, it can lead to security vulnerabilities).</li>
+    	<li>Winner: Both</li></ul>
+    </ul>
+</div>
+
+<hr class="hr_comp"/>
+<div>
+    <h2>Ruby on Rails VS ASP.NET</h2>
+    <h3>Overview</h3>
+    <p>Both of them are very fantastic. They accomplish the same goals, supporting both front-end and back-end web development.
+    While a few command line commands create new folders and database, necessary to start a new Rails project, ASP.NET requires a bit more involvement.
+    The major difference lies "in availability of open source extensions and community support."</p>
+
+    <h3>ASP.NET</h3>
+    <p>
+    <ul>
+        <li>
+        Language Dependency: It is language independent. Any programming language is implemented in preference.
+        </li>
+        <li>
+        Security: Windows support built-in authentication and per-application configuration - safe and secured.
+        </li>
+        <li>
+        Performance: Managed by the ASP.NET runtime. New process is created upon failure. Constantly available in handling requests.
+        </li>
+        <li>
+        Simplicity: Easy to perform common tasks - form submission, client authentication, and site configuration.
+        </li>
+        <li>
+        Deployment: No need to register components due to built-in configuration in Microsoft Visual Studio - easy
+        </li>
+        <li>
+        Server Activities: It is purely server-side technology. enhanced by early binding. The server constantly monitors the pages, and applications running. It notifies memory leaks, infinite loops, and other illegal activities.
+        </li>
+    </ul>
+    </p>
+
+    <h3>Ruby on Rails</h3>
+    <p>
+    <ul>
+        <li>
+        Language Dependency: It is language dependent on Ruby.
+        </li>
+        <li>
+        Authentication: Developers can build new session that enables authentication, or third-party API such as devices are popular to achieve many goals.
+        </li>
+        <li>
+        Server Activities: Many available tools are available to monitor server activities.
+        </li>
+        <li>
+        Community : Community of rails is much bigger and engaged than that of ASP.NET.
+        </li>
+    </ul>
+    </p>
+
+    <h3>References</h3>
+        <p>
+        <ul>
+            <li>
+            http://www.quora.com/Which-is-the-best-Ruby-on-Rails-Asp-net-or-MVC-and-why
+            </li>
+            <li>
+            http://www.itegritygroup.com/asp-net-advantages/
+            </li>
+        </ul>
+        </p>
+</div>
+
+<hr class="hr_comp"/>
+<div>
+
+<h2> Ruby On Rails VS Node.js </h2>
+<h3> Overview </h3>
+<p>Both Ruby on Rails and Node.js can achieve the same results. Rails is perfect for situation where you need to move quickly. Node.js is also great set of tools that are growing rapidly with dedicated userbase, high performance, and easy to pick up. Ruby on Rails is a web application framework written in Ruby language, and Node.js is a server bundled with low-level routing and sysadmin capabilities written in Javascript to be asynchronous and blazing fast.</p>
+<h3> Progamming </h3>
+<p>Rails comes with a fulsome ecosystem from models to views, controllers, to data object models, with extremely clear and concise interactions that can only occur with OCD vertical integration. Node.js is also possible, but it would require some heavy module interaction and helpers. Furthermore, in Rails, there is nothing to be worried about data models. While Mongoose on Node.js helps, some functions such as Product.find(params[:id]) are easily available throughout rails application, modules, controllers, and views. Also if there is something goes wrong, Rails will read into specific variable names, and have it magically turn into a function that returns the appropriate path for the new route within the product controller/model. With Node.js, what you see is what you get, and there is very little interpolation.</p>
+<h3> Speed of Development </h3>
+<p>Node.js takes much more time to connect frameworks, database, modules and all set ups together. However, in Rails, just one command line input puts everything such as all of controllers, views, and databse models together. Many modules that would have to be hand-picked in Node.js are integrated by default in Rails.</p>
+</div>
+
+<hr class="hr_comp"/>
+<!-- by JK last edited: Sun. Jun 28 -->
+<h2>Ruby on Rails VS Laravel</h2>
+
+<h3>Overview</h3>
+<p>Ruby on Rails and Laravel are two distinct web development frameworks, and it just depends on personal preference when it comes to choosing among the two frameworks. Both Ruby on Rails and Laravel are open source frameworks that use the MVC pattern, and they both follow the DRY (Don't Repeat Yourself) principle making it easier and quicker to review code. Ruby on Rails and Laravel are for Ruby and PHP programming languages respectively, and the learning curve is a bit steeper for Ruby on Rails because Ruby is well known for being complicated to learn, and PHP is quite easy to learn if you know how to create a simple HTML web page. </p>
+
+<h3>Development</h3>
+<p>The Rails framework will allow users to quickly create an application from scratch because it provides many shortcuts and the programmer can write less code. Using Laravel to create an application from scratch will take some more time than Rails because it does not have quite a strong library compared to Rails, and the programmer needs to write longer code to achieve the same effects as in Rails. </p>
+
+<h3>Community Support</h3>
+<p>Laravel for PHP has a huge and enthusiastic community of developers and online resources to help with step-by-step troubleshooting guides to creating applications, and using libraries. Ruby on Rails has a smaller community than PHP Laravel, but the resources tend to be better quality as people who work with Ruby most of the time tend to be advanced developers. </p>
+
+<h3>References</h3>
+<p>http://ctoinformer.com/development/ruby-on-rails-vs-php-laravel/</p>
