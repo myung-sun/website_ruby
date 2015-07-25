@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save #JY: check if DB accept the attributes
       log_in @user
-      flash[:success] = "Welcome to our CMPT470-Group 7's website!"
+      flash[:success] = "Welcome to my website!"
       redirect_to @user
     else
       render 'new' #if not render back to new

@@ -36,3 +36,61 @@ Processing by HomeController#index as HTML
   Rendered home/index.html.erb within layouts/application (0.1ms)
   [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
 Completed 200 OK in 244ms (Views: 243.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-24 20:41:42 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (8.4ms)
+  [1m[35mUser Load (8.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Completed 200 OK in 1399ms (Views: 1388.6ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-24 20:44:34 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (15.5ms)
+  [1m[36mUser Load (33.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 200 OK in 1706ms (Views: 1609.6ms | ActiveRecord: 90.4ms)
+
+
+Started GET "/learn/intro" for 127.0.0.1 at 2015-07-24 20:44:39 -0700
+Processing by LearnController#intro as HTML
+  Rendered learn/intro.html.erb within layouts/application (103.4ms)
+  [1m[35mUser Load (2.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Completed 200 OK in 1386ms (Views: 1383.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/learn/pros" for 127.0.0.1 at 2015-07-24 20:44:42 -0700
+Processing by LearnController#pros as HTML
+  Rendered learn/pros.html.erb within layouts/application (160.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 200 OK in 562ms (Views: 561.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/learn/cons" for 127.0.0.1 at 2015-07-24 20:44:45 -0700
+Processing by LearnController#cons as HTML
+  Rendered learn/cons.html.erb within layouts/application (8.9ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Completed 200 OK in 309ms (Views: 308.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/learn/comparison" for 127.0.0.1 at 2015-07-24 20:44:47 -0700
+Processing by LearnController#comparison as HTML
+  Rendered learn/comparison.html.erb within layouts/application (6.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 200 OK in 309ms (Views: 308.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/learn/conclusion" for 127.0.0.1 at 2015-07-24 20:44:52 -0700
+Processing by LearnController#conclusion as HTML
+  Rendered learn/conclusion.html.erb within layouts/application (1.7ms)
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Completed 200 OK in 304ms (Views: 301.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/boards" for 127.0.0.1 at 2015-07-24 20:44:54 -0700
+Processing by BoardsController#index as HTML
+  [1m[36mBoard Load (55.2ms)[0m  [1mSELECT "boards".* FROM "boards"[0m
+  Rendered boards/index.html.erb within layouts/application (98.5ms)
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Completed 200 OK in 450ms (Views: 362.7ms | ActiveRecord: 81.0ms)
